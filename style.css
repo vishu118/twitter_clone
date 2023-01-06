@@ -25,10 +25,37 @@
     background-color: #f0f8fd;
   }
 
+.signup_container{
+   width: 100vw;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.signup_modal{
+  width: 35%;
+  height: auto;
+  background-color: #ffff;
+  position: absolute;
+  border-radius: 8px;
+  top: 10%;
+  left: 30%;
+  text-align: center;
+  padding: 10rem 0 ;
+  
+
+}
+
+
   .main-page {
     width: 100%;
     height: 100vh;
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content;
   
@@ -359,6 +386,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  display: none;
 }
 
 .feeds-nav {
