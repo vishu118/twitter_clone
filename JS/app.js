@@ -14,6 +14,8 @@ const signupBtn = document.getElementById('signupBtn')
 const form = document.getElementById('form')
 const error = document.querySelector(".alert-message");
 
+
+
 let count = 0;
 let userDetails = [];
 
@@ -93,5 +95,18 @@ function formValidation(e) {
     password.value = "";
     cnfPassword.value = "";
   }
+
+// =================================login===========================================================
+// let login_id = document.getElementById('login_id').value;
+// let login_password = document.getElementById('login_password').value;
+// // let login_id1 = JSON.parse(getItem("userDetails"))
+// let masterArray = JSON.parse(localStorage.getItem("UserDetails.find((e)=>e.userid)"));
+// console.log(masterArray)
+
+
+
+
+
+// =================================login===========================================================
 
 

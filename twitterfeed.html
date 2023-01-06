@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>twitter</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/8twitter.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="feeds-page">
+      <aside class="feeds-nav ">
+        <a href="#" class="dove"><i class="fa-brands fa-twitter"></i></a>
+        <div class="icons">
+          <a href="#" class="active">
+            <i class="fa fa-home light-text"></i>
+            <p class="light-text">Home</p>
+          </a>
+          <a href="#"
+            ><i class="fa fa-hashtag light-text"></i>
+            <p class="light-text">Explore</p>
+          </a>
+          <a href="#"
+            ><i class="fa fa-bell light-text"></i>
+            <p class="light-text">Notification</p></a
+          >
+          <a href="#"
+            ><i class="fa fa-envelope light-text"></i>
+            <p class="light-text">Messages</p></a
+          >
+          <a href="#"
+            ><i class="fa-regular fa-bookmark light-text"></i>
+            <p class="light-text">Bookmarks</p></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-clipboard-list light-text"></i>
+            <p class="light-text">Lists</p></a
+          >
+          <a href="#" id="profile"
+            ><i class="fa-regular fa-user light-text"></i>
+            <p class="light-text">Profile</p></a
+          >
+          <a href="#" id="more"
+            ><i class="fa-solid fa-ellipsis light-text"></i>
+            <p class="light-text">More</p></a
+          >
+        </div>
+        <!-- ---post button--- -->
+
+        <button type="button" class="post-btn">Tweet</button>
+
+        <div class="user">
+          <div class="user_img_wrapper">
+            <img
+              src="https://i.pinimg.com/736x/95/ba/c5/95bac58e2bc212bfc29b4e28b21e0740.jpg"
+              alt="user image"
+            />
+          </div>
+          <a href="#" class="user_link "
+            ><p>Lucifer</p>
+            <span>@lucifer110</span><i class="fa-solid fa-ellipsis "></i
+          ></a>
+        </div>
+      </aside>
+
+      <div class="feeds_content">
+        <div class="feeds_header">
+          <div class="header_top ">
+            <h4 class="">Home</h4>
+            <img src="/images/stars.svg" alt="" width="25" />
+          </div>
+
+          <div class="header_post ">
+            <div class="header_img_wrapper">
+              <img
+                src="https://i.pinimg.com/736x/95/ba/c5/95bac58e2bc212bfc29b4e28b21e0740.jpg"
+                alt="user"
+              />
+              <textarea
+                name=""
+                id=""
+                placeholder="What's happening?"
+                class="textarea  "
+              ></textarea>
+            </div>
+            <div class="bottom ">
+              <div class="icons">
+                <i class="fa fa-image"></i>
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-regular fa-calendar-days"></i>
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <button type="button">Tweet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="posts">
+            <div class="post ">
+              <div class="user_avatar">
+                <img
+                  src="https://hips.hearstapps.com/esquireuk.cdnds.net/16/18/1462267385-tom-hiddleston-main.jpg"
+                  alt="user"
+                />
+              </div>
+
+              <div class="post_content">
+                <div class="post_user_info ">
+                  <h4>Loki</h4>
+                  <i class="fa fa-check-circle"></i>
+                  <span>@loki123</span>
+                </div>
+                <p class="post_text ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  laboriosam provident pariatur mollitia natus odit fuga porro
+                  recusandae eaque similique nesciunt molestiae architecto quia
+                  quae hic, in molestias quas qui asperiores cum ad. Atque
+                  delectus.
+                </p>
+                <div class="post_img">
+                  <img
+                    src="https://snworksceo.imgix.net/dtc/9691d685-ab26-4d9a-84e1-27676efa4fd6.sized-1000x1000.jpeg?w=1000"
+                    alt="post_img"
+                  />
+                </div>
+                <div class="post_icons">
+                  <i class="fa fa-comment"></i>
+                  <i class="fa fa-retweet"></i>
+                  <i class="fa fa-heart"></i>
+                  <i class="fa fa-share-alt"></i>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+
+      <div class="follow">
+
+        <h3 class="follow_heading  ">Who to follow</h3>
+        <div class="follow_users ">
+          <div class="follow_user_img">
+            <img
+              src="https://source.unsplash.com/480x360/?car "
+              alt="follow"
+              width="40px"
+            />
+          </div>
+          <div class="follow_user_info ">
+            <h4>Anna Smith</h4>
+            <p>@annasmith</p>
+          </div>
+          <button type="button" class="follow_btn dark_mode2">Follow</button>
+        </div>
+
+        <div class="follow_users ">
+          <div class="follow_user_img">
+            <img
+              src="https://source.unsplash.com/480x360/?flower "
+              alt="follow"
+              width="40px"
+            />
+          </div>
+          <div class="follow_user_info ">
+            <h4>Tom Deed</h4>
+            <p>@tomdeed</p>
+          </div>
+          <button type="button" class="follow_btn dark_mode2">Follow</button>
+        </div>
+
+        <div class="follow_users ">
+          <div class="follow_user_img">
+            <img
+              src="https://source.unsplash.com/480x360/?teddy "
+              alt="follow"
+              width="40px"
+            />
+          </div>
+          <div class="follow_user_info ">
+            <h4> Chris Evans</h4>
+            <p>@chris</p>
+          </div>
+          <button type="button" class="follow_btn dark_mode2">Follow</button>
+        </div>
+
+        <div class="follow_users ">
+          <div class="follow_user_img">
+            <img
+              src="https://source.unsplash.com/480x360/?nature "
+              alt="follow"
+            />
+          </div>
+          <div class="follow_user_info ">
+            <h4>Cate Bishop</h4>
+            <p>@catebishop</p>
+          </div>
+          <button type="button" class="follow_btn dark_mode2">Follow</button>
+        </div>
+
+        <div class="follow_link">
+          <a href="#">Show more</a>
+        </div>
+
+        <footer class="follow_footer dark_mode2">
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+    <!-- <script src="./JS/app.js"></script> -->
+  </body>
+</html>
