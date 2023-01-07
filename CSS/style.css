@@ -117,8 +117,9 @@ body {
   top: 5.5rem;
   left: -70px;
   font-size: 1.6rem;
-  font-weight: 300;
-  color: #a7a6a6;
+  font-weight: bold;
+  color: #1b71e8;
+  text-decoration: none;
 }
 
 .btn-top {
