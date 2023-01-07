@@ -11,9 +11,11 @@ const userID = document.getElementById('userId')
 const password = document.getElementById('password')
 const cnfPassword = document.getElementById('confirmPassword')
 const signupBtn = document.getElementById('signupBtn')
+
 const form = document.getElementById('form')
 const error = document.querySelector(".alert-message");
 const button = document.querySelector(".button");
+const delete_tweets = document.querySelector(".delete_tweets");
 
 
 
@@ -22,80 +24,6 @@ let userDetails = [];
 
 
 
-
-// signup.addEventListener('click',()=>{
-//     signup_container.style.display = "block"
-    
-// })
-// login.addEventListener('click',()=>{
-//     login_page.style.display = "block"
-//     main_page.style.display = "none"
-// })
-
-
-// signup.addEventListener("click", () => {
-//     signup_container.style.display = "block"
-// });
-
-// form.addEventListener("submit", (e) => {
-// e.preventDefault();
-
-// formValidation();
-// });
-
-// function formValidation(e) {
-//     if (
-//         fullName.value == "" ||
-//       email.value == "" ||
-//       userID.value == "" ||
-//       password.value == ""
-//     ) {
-//       error.innerText = "Add Something In Input";
-//       setTimeout(() => {
-//         error.innerText = "";
-//       }, 1000);
-//     }else if
-//       (password.value !== cnfPassword.value){
-//         error.innerText = "Password Is Not Same";
-//       setTimeout(() => {
-//         error.innerText = "";
-//       }, 1000);
-//     }
-//      else {
-//       acceptata();
-//       feeds_page.style.display="block"
-//       signup_container.style.display = "none"
-//       main_page.style.display = "none"
-    
-//       }
-//     }
-  
-
-//   let acceptata = () => {
-//     let details = {
-//         id: count++,
-//         Name: fullName.value,
-//         Email: email.value,
-//         UserId: userID.value,
-//         Password: password.value,
-//     };
-  
-    
-//     userDetails.push(details);
-//     localStorage.setItem("UserDetails", JSON.stringify(userDetails));
-//     resetForm()
-
-    
-  
-//   };
-
-//   function resetForm() {
-//     fullName.value = "";
-//     email.value = "";
-//     userID.value = "";
-//     password.value = "";
-//     cnfPassword.value = "";
-//   }
 
 // =================================login===========================================================
 // let login_id = document.getElementById('login_id').value;
@@ -157,17 +85,29 @@ async function getTweetsAndInsertHTML() {
                   />
                 </div>
                 <div class="post_icons">
+                <div>
                   <i class="fa fa-comment"></i>
                   <i class="fa fa-retweet"></i>
                   <i class="fa fa-heart"></i>
                   <i class="fa fa-share-alt"></i>
+                  
                 </div>
-                 <button data-id=${tweet._id} class="tweet-edit" id="tweet-edit">
-                    Edit
-                </button>
-                <button data-id=${tweet._id} class="tweet-delete" id="tweet-delete">
-                    Delete
-                </button>
+               
+                <span><i class="fa-solid fa-ellipsis-vertical" id="vertical_dot"></i></span>
+
+                
+              </div>
+              <div class="delete_tweets">
+                <button data-id=${tweet._id} class="tweet-edit" id="tweet-edit">
+                  Edit
+              </button>
+              <button data-id=${tweet._id} class="tweet-delete" id="tweet-delete">
+                  Delete
+              </button>
+              </div>
+
+
+                
               </div>
             </div>`
     }).join(""))
@@ -234,6 +174,7 @@ document.addEventListener('click', async (event) => {
             
             alert("Tweet deleted successfuly");
             document.getElementById(tweetId).remove();
+           
         }
     }
 
@@ -268,6 +209,7 @@ document.addEventListener('click', async (event) => {
 
         alert("Updated Successfully");
         span.innerText = tweetText;
+        
     }
 
     // if(event.target.classList.contains('show_more')) {
@@ -288,3 +230,81 @@ window.addEventListener('scroll', () => {
         getTweetsAndInsertHTML();
     }
 })
+
+
+
+
+
+signup.addEventListener('click',()=>{
+    signup_container.style.display = "block"
+    
+})
+login.addEventListener('click',()=>{
+    login_page.style.display = "block"
+    main_page.style.display = "none"
+})
+
+
+signup.addEventListener("click", () => {
+    signup_container.style.display = "block"
+});
+
+form.addEventListener("submit", (e) => {
+e.preventDefault();
+
+formValidation();
+});
+
+function formValidation(e) {
+    if (
+        fullName.value == "" ||
+      email.value == "" ||
+      userID.value == "" ||
+      password.value == ""
+    ) {
+      error.innerText = "Add Something In Input";
+      setTimeout(() => {
+        error.innerText = "";
+      }, 1000);
+    }else if
+      (password.value !== cnfPassword.value){
+        error.innerText = "Password Is Not Same";
+      setTimeout(() => {
+        error.innerText = "";
+      }, 1000);
+    }
+     else {
+      acceptata();
+      feeds_page.style.display="block"
+      signup_container.style.display = "none"
+      main_page.style.display = "none"
+    
+      }
+    }
+  
+
+  let acceptata = () => {
+    let details = {
+        id: count++,
+        Name: fullName.value,
+        Email: email.value,
+        UserId: userID.value,
+        Password: password.value,
+    };
+  
+    
+    userDetails.push(details);
+    localStorage.setItem("UserDetails", JSON.stringify(userDetails));
+    resetForm()
+
+    
+  
+  };
+
+  function resetForm() {
+    fullName.value = "";
+    email.value = "";
+    userID.value = "";
+    password.value = "";
+    cnfPassword.value = "";
+  }

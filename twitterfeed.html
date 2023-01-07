@@ -20,8 +20,12 @@
     />
   </head>
   <body>
+
+    <!-- ===========================================================MAIN FEED PAGE==================================================== -->
     <section class="feeds-page">
-      <aside class="feeds-nav ">
+
+      <!-- ===========================================================ASIDE NAV PANAL================================================== -->
+      <aside class="feeds-nav">
         <a href="#" class="dove"><i class="fa-brands fa-twitter"></i></a>
         <div class="icons">
           <a href="#" class="active">
@@ -68,21 +72,24 @@
               alt="user image"
             />
           </div>
-          <a href="#" class="user_link "
+          <a href="#" class="user_link"
             ><p>Lucifer</p>
-            <span>@lucifer110</span><i class="fa-solid fa-ellipsis "></i
+            <span>@lucifer110</span><i class="fa-solid fa-ellipsis"></i
           ></a>
         </div>
       </aside>
+       <!-- ===========================================================ASIDE NAV PANAL================================================== -->
 
+
+       <!-- ================================================================MID TWEETS SECTION ============================================ -->
       <div class="feeds_content">
         <div class="feeds_header">
-          <div class="header_top ">
+          <div class="header_top">
             <h4 class="">Home</h4>
             <img src="/images/stars.svg" alt="" width="25" />
           </div>
 
-          <div class="header_post ">
+          <div class="header_post">
             <div class="header_img_wrapper">
               <img
                 src="https://i.pinimg.com/736x/95/ba/c5/95bac58e2bc212bfc29b4e28b21e0740.jpg"
@@ -92,10 +99,10 @@
                 name=""
                 id=""
                 placeholder="What's happening?"
-                class="textarea  "
+                class="textarea"
               ></textarea>
             </div>
-            <div class="bottom ">
+            <div class="bottom">
               <div class="icons">
                 <i class="fa fa-image"></i>
                 <i class="fa-solid fa-list-ul"></i>
@@ -109,7 +116,7 @@
         </div>
 
         <div class="posts" id="posts">
-            <!-- <div class="post ">
+          <!-- <div class="post ">
               <div class="user_avatar">
                 <img
                   src="https://hips.hearstapps.com/esquireuk.cdnds.net/16/18/1462267385-tom-hiddleston-main.jpg"
@@ -137,21 +144,65 @@
                   />
                 </div>
                 <div class="post_icons">
-                  <i class="fa fa-comment"></i>
-                  <i class="fa fa-retweet"></i>
-                  <i class="fa fa-heart"></i>
-                  <i class="fa fa-share-alt"></i>
+                  <div>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-retweet"></i>
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-share-alt"></i>
+                    
+                  </div>
+                 
+                  <span><i class="fa-solid fa-ellipsis-vertical" id="vertical_dot"></i></span>
+
+                  
                 </div>
+                <div class="delete_tweets">
+                  <button data-id=${tweet._id} class="tweet-edit" id="tweet-edit">
+                    Edit
+                </button>
+                <button data-id=${tweet._id} class="tweet-delete" id="tweet-delete">
+                    Delete
+                </button>
+                </div>
+                
               </div>
-            </div> -->
-          
+            </div>  -->
         </div>
       </div>
 
-      <div class="follow">
+       <!-- ================================================================MID TWEETS SECTION ============================================ -->
 
-        <h3 class="follow_heading  ">Who to follow</h3>
-        <div class="follow_users ">
+
+       <!-- ================================================RIGHT NAV SECTION (FOLLOW)================================================ -->
+      <div class="follow">
+        <div class="trending_links">
+          <div class="rightside_happening">
+            <h1>What's happening</h1>
+            <div class="trending_container">
+              <div class="trending_left">
+                <p>Trending in India</p>
+                <h3>#pathaanboycott</h3>
+                <p>9,600 Tweets</p>
+              </div>
+              <div class="trending_dots">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <div class="trending_container">
+              <div class="trending_left">
+                <p>Trending in India</p>
+                <h3>#modiji</h3>
+                <p>9,600 Tweets</p>
+              </div>
+              <div class="trending_dots">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="follow_heading">Who to follow</h3>
+        <div class="follow_users">
           <div class="follow_user_img">
             <img
               src="https://source.unsplash.com/480x360/?car "
@@ -159,14 +210,14 @@
               width="40px"
             />
           </div>
-          <div class="follow_user_info ">
+          <div class="follow_user_info">
             <h4>Anna Smith</h4>
             <p>@annasmith</p>
           </div>
           <button type="button" class="follow_btn dark_mode2">Follow</button>
         </div>
 
-        <div class="follow_users ">
+        <div class="follow_users">
           <div class="follow_user_img">
             <img
               src="https://source.unsplash.com/480x360/?flower "
@@ -174,14 +225,14 @@
               width="40px"
             />
           </div>
-          <div class="follow_user_info ">
+          <div class="follow_user_info">
             <h4>Tom Deed</h4>
             <p>@tomdeed</p>
           </div>
           <button type="button" class="follow_btn dark_mode2">Follow</button>
         </div>
 
-        <div class="follow_users ">
+        <div class="follow_users">
           <div class="follow_user_img">
             <img
               src="https://source.unsplash.com/480x360/?teddy "
@@ -189,23 +240,9 @@
               width="40px"
             />
           </div>
-          <div class="follow_user_info ">
-            <h4> Chris Evans</h4>
+          <div class="follow_user_info">
+            <h4>Chris Evans</h4>
             <p>@chris</p>
-          </div>
-          <button type="button" class="follow_btn dark_mode2">Follow</button>
-        </div>
-
-        <div class="follow_users ">
-          <div class="follow_user_img">
-            <img
-              src="https://source.unsplash.com/480x360/?nature "
-              alt="follow"
-            />
-          </div>
-          <div class="follow_user_info ">
-            <h4>Cate Bishop</h4>
-            <p>@catebishop</p>
           </div>
           <button type="button" class="follow_btn dark_mode2">Follow</button>
         </div>
@@ -224,7 +261,9 @@
           </ul>
         </footer>
       </div>
+      <!-- ================================================RIGHT NAV SECTION (FOLLOW)================================================ -->
     </section>
+    <!-- ==========================================================FEED SECTION END====================================================== -->
     <script src="./JS/app.js"></script>
   </body>
 </html>
