@@ -355,7 +355,7 @@
   .login-form a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: var(--main-color);
+    color: #d9ebf7;
   }
   .login .login-footer {
     background-color: #edf3f7;
@@ -377,7 +377,10 @@
     color: var(--main-color);
   }
   
-  
+  #bt:hover{
+  color: #c6dfef;
+  background-color:#1aa1f5;
+  }
 
 
 
@@ -386,7 +389,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  /* display: none; */
+  display: block;
 }
 
 .feeds-nav {
@@ -712,14 +715,14 @@
   padding: 1rem 1.5rem;
   margin-top: 2rem;
   background-color: var(--main-color);
-  color: var(--second-color);
+  color: #d9ebf7;
   border: 0.1rem solid var(--main-color);
   border-radius: 3rem;
   font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-  opacity: 0.4;
+
 }
 
 .header_post .icons {
